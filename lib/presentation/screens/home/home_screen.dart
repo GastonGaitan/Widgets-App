@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/menu/menu_item.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const name = 'HomeScreen';
+
   const HomeScreen({super.key});
 
   @override
@@ -35,11 +38,11 @@ class _HomeView extends StatelessWidget {
 }
 
 class _CustomListTile extends StatelessWidget {
+  final MenuItem menuItem;
+
   const _CustomListTile({
     required this.menuItem,
   });
-
-  final MenuItem menuItem;
 
   @override
   Widget build(BuildContext context) {
@@ -51,8 +54,9 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        
-      },
+          context.push(menuItem.link);
+        },
+
     );
   }
 }
