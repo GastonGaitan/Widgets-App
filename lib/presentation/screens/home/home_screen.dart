@@ -38,6 +38,7 @@ class _HomeView extends StatelessWidget {
 }
 
 class _CustomListTile extends StatelessWidget {
+
   final MenuItem menuItem;
 
   const _CustomListTile({
@@ -56,7 +57,6 @@ class _CustomListTile extends StatelessWidget {
       onTap: () {
           context.push(menuItem.link);
         },
-
     );
   }
 }

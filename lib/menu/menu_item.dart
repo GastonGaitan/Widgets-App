@@ -22,10 +22,25 @@ const appMenuItems = <MenuItem>[
     link: '/buttons',
     icon: Icons.smart_button
   ),
+
   MenuItem(
     title: 'Tarjetas',
     subTitle: 'Un contenedor estilizado',
     link: '/cards',
     icon: Icons.credit_card
+  ),
+
+  MenuItem(
+    title: 'ProgressIndicators',
+    subTitle: 'Generales y controlados',
+    link: '/progress',
+    icon: Icons.refresh_rounded
+  ),
+
+  MenuItem(
+    title: 'SnackBar',
+    subTitle: 'Mensajes en la parte inferior',
+    link: '/snackbars',
+    icon: Icons.info_outline
   ),
 ];
