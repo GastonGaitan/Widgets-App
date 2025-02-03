@@ -53,6 +53,18 @@ final appRouter = GoRouter(
       name: AppTutorialScreen.name,
       builder: (context, state) => AppTutorialScreen(),
     ),
+
+    GoRoute(
+      path: '/counter_screen',
+      name: CounterScreen.name,
+      builder: (context, state) => CounterScreen(),
+    ),
+
+    GoRoute(
+      path: '/theme-changer',
+      name: ThemeChangerScreen.name,
+      builder: (context, state) => ThemeChangerScreen(),
+    )
     
     
   ],
